@@ -1,0 +1,156 @@
+@import '../variables';
+
+.for-humans {
+   background: $black;
+}
+
+.gradient {
+   color: transparent;
+   -webkit-background-clip: text;
+   background-clip: text;
+   background-image: linear-gradient(79.75deg, #B317FD 9.66%, #18D4BC 75.14%);
+
+}
+
+.for-humans-block {
+   position: relative;
+   height: 800px;
+   color: $lite-gray;
+
+
+   .humans-title {
+
+      margin: 0 auto;
+      width: 565px;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 72px;
+      text-align: center;
+      margin-bottom: 25px;
+
+      &::before {
+         content: "";
+         position: absolute;
+         width: 23px;
+         height: 52px;
+         left:350px;
+         bottom: 765px;
+         background-image: url('../../assets/img/elemsOfDesign/linerWhite.svg');
+         z-index: 0;
+
+      }
+
+      &::after {
+         content: "";
+         position: absolute;
+         width: 39px;
+         height: 88px;
+         top: 47px;
+       
+        right: 320px;
+         background-image: url('../../assets/img/elemsOfDesign/linerGrey.svg');
+         z-index: 0;
+
+      }
+
+   }
+
+   .humans-text {
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 34px;
+      text-align: center;
+      max-width: 771px;
+      color: $lite-gray;
+      margin-bottom: 40px;
+
+   }
+
+   .humans-btn-block {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.07em;
+      margin-bottom: 28px;
+
+      .humans-btn {
+         transition: all 0.4s linear;
+
+         &:hover {
+            background-color: $violet;
+         }
+      }
+
+      a {
+         display: block;
+         padding: 21px 69px;
+         background: #232323;
+         border-radius: 24px;
+          color: $lite-gray;;
+      }
+   }
+
+   .bell-conteiner {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+
+
+      &::after {
+         content: "";
+         position: absolute;
+         width: 1056px;
+         height: 422.69px;
+         right: 80px;
+         top: 15px;
+         background-image: url('../../assets/img/dashbord/Dashboard.svg');
+         z-index: 0;
+      }
+
+   }
+
+   .bell-block {
+      padding: 27px 31px 27px 24px;
+      background: #242424;
+      display: flex;
+      gap: 16px;
+      width: 413px;
+      border-radius: 24px;
+      align-items: center;
+      z-index: 2;
+
+
+      .bell-text {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 24px;
+         letter-spacing: -0.2px;
+         color: $lite-gray;
+
+         span {
+            color: #52B90F;
+         }
+      }
+
+   }
+}
+
+.sub-humans {
+   padding: 155px 0 79px 0;
+   background: #161616;
+
+   .sub-humans-text {
+      width: 435px;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.2px;
+      color: $grey;
+   }
+}

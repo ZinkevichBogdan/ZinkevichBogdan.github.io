@@ -1,0 +1,52 @@
+@import '../variables';
+
+.contact {
+   background: #1D1D1D;
+}
+
+.contact-block {
+   display: flex;
+   justify-content: space-between;
+   padding: 16px 34px 16px 49px;
+}
+
+.contact-adress {
+   width: 193px;
+
+   p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.25px;
+      color: $white;
+   }
+}
+
+.contact {
+   p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: $white;
+   }
+
+   .number {
+      a {
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 28px;
+         display: flex;
+         align-items: center;
+         letter-spacing: 0.1px;
+         cursor: pointer;
+         transition: all 0.4s linear;
+
+         &:hover {
+            color: #14CDB6;
+         }
+
+      }
+   }
+
+}
